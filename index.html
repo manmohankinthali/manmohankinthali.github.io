@@ -1,56 +1,368 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name - Resume</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      line-height: 1.6;
-      padding: 20px;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    hr {
-      margin: 20px 0;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manmohan Kinthali | Embedded Software Engineer</title>
+  <meta name="description" content="Portfolio of Manmohan Kinthali – Embedded Software Engineer specializing in Automotive, AUTOSAR, Power Electronics, and Functional Safety.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.min.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Manmohan Kinthali","jobTitle":"Embedded Software Engineer","email":"mailto:manmohankinthali@gmail.com","sameAs":["https://linkedin.com/in/manmohan-kinthali","https://github.com/manmohankinthali"],"knowsAbout":["Embedded C","AUTOSAR","CAN","Power Electronics","FuSa","ASPICE"]}
+  </script>
 </head>
 <body>
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">MK</a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-<h1>Your Name</h1>
-<p><strong>Job Title</strong></p>
-<p>Email: youremail@example.com | LinkedIn | GitHub</p>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-greeting">WELCOME TO MY PORTFOLIO</span>
+          <h1 class="hero-title">Manmohan Kinthali</h1>
+          <p class="hero-subtitle">Embedded Software Engineer – Automotive & Power Electronics</p>
+          <p class="hero-description">Specialized in AUTOSAR, CAN/LIN, Functional Safety (ISO 26262), ASPICE, and Power Electronics. Building reliable embedded systems for the automotive industry.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+              <div>
+                <strong>AUTOSAR + Firmware</strong>
+                <small>Classic & Adaptive platforms</small>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3h-8l-2 4h12l-2-4z"/><path d="M12 12v4"/><path d="M8 12v4"/><path d="M16 12v4"/></svg></span>
+              <div>
+                <strong>Power Electronics</strong>
+                <small>HEV/EV motor control</small>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <div>
+                <strong>Functional Safety</strong>
+                <small>ISO 26262 compliant</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <span class="stat-text">Open to Automotive Roles</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span class="stat-text">Braunschweig, Germany</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span>
+            <span class="stat-text">3+ Years in Automotive</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg></span>
+            <span class="stat-text">ASPICE & FuSa Certified</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<hr>
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p class="about-text">I'm an Embedded Software Engineer with hands-on experience in automotive embedded systems, power electronics, and real-time firmware development. I specialize in AUTOSAR-based ECU software, CAN/LIN communication stacks, and safety-critical systems adhering to ISO 26262.</p>
+          <p class="about-text">Currently based in Braunschweig, Germany, I have worked with industry leaders developing radar sensor software, motor control units, and HEV/EV powertrain systems. I'm passionate about building robust, efficient, and safe embedded solutions for next-generation vehicles.</p>
+          <div class="expertise-tags">
+            <span class="tag">AUTOSAR Classic</span>
+            <span class="tag">ISO 26262</span>
+            <span class="tag">CAN / LIN</span>
+            <span class="tag">ASPICE</span>
+            <span class="tag">Power Electronics</span>
+            <span class="tag">Motor Control</span>
+          </div>
+        </div>
+        <div class="expertise-grid">
+          <div class="expertise-card">
+            <span class="expertise-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg></span>
+            <h4>Embedded Software</h4>
+            <p>AUTOSAR BSW/ASW, MCAL drivers, ECU diagnostics (UDS), and real-time firmware on Infineon, Renesas & NXP MCUs</p>
+          </div>
+          <div class="expertise-card">
+            <span class="expertise-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+            <h4>Power Electronics</h4>
+            <p>Inverter control, DC-DC converters, motor drive algorithms (FOC/DTC), and HV battery management for HEV/EV</p>
+          </div>
+          <div class="expertise-card">
+            <span class="expertise-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <h4>Functional Safety</h4>
+            <p>ISO 26262 ASIL-B/D development, FMEA, safety mechanisms, fault injection testing, and ASPICE process compliance</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Summary</h2>
-<p>Short professional summary about your skills and goals.</p>
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h4>Multi & Plug-in HEV Powertrain</h4>
+            <p>Developed embedded software for hybrid electric vehicle powertrain control units. Implemented motor control algorithms, torque management, and energy recovery strategies for multi-mode HEV operation.</p>
+            <div class="project-tags">
+              <span class="tag-sm">AUTOSAR</span>
+              <span class="tag-sm">Infineon AURIX</span>
+              <span class="tag-sm">FOC</span>
+              <span class="tag-sm">CAN</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h4>Automotive Radar Sensor Firmware</h4>
+            <p>Contributed to embedded firmware for 77GHz radar sensors used in ADAS applications. Developed signal processing pipelines, object detection algorithms, and CAN-based communication interfaces.</p>
+            <div class="project-tags">
+              <span class="tag-sm">Radar DSP</span>
+              <span class="tag-sm">ADAS</span>
+              <span class="tag-sm">Embedded C</span>
+              <span class="tag-sm">ISO 26262</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h4>ECU Diagnostic Stack (UDS)</h4>
+            <p>Implemented Unified Diagnostic Services (UDS) stack for automotive ECUs. Developed fault memory management (DTC), routine control, and flash bootloader for OTA-capable controllers.</p>
+            <div class="project-tags">
+              <span class="tag-sm">UDS/OBD-II</span>
+              <span class="tag-sm">Bootloader</span>
+              <span class="tag-sm">AUTOSAR DCM</span>
+              <span class="tag-sm">NVM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Skills</h2>
-<ul>
-  <li>Skill 1</li>
-  <li>Skill 2</li>
-  <li>Skill 3</li>
-</ul>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Stack</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming & Languages</h3>
+            <div class="skill-items">
+              <span class="skill-item">Embedded C</span>
+              <span class="skill-item">C++</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">MATLAB/Simulink</span>
+              <span class="skill-item">Assembly</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Automotive & AUTOSAR</h3>
+            <div class="skill-items">
+              <span class="skill-item">AUTOSAR Classic</span>
+              <span class="skill-item">MCAL</span>
+              <span class="skill-item">BSW Configuration</span>
+              <span class="skill-item">RTE</span>
+              <span class="skill-item">UDS / OBD-II</span>
+              <span class="skill-item">ISO 26262</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Communication Protocols</h3>
+            <div class="skill-items">
+              <span class="skill-item">CAN / CAN-FD</span>
+              <span class="skill-item">LIN</span>
+              <span class="skill-item">SPI</span>
+              <span class="skill-item">I²C</span>
+              <span class="skill-item">UART</span>
+              <span class="skill-item">Ethernet (DoIP)</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Platforms</h3>
+            <div class="skill-items">
+              <span class="skill-item">Vector CANoe/CANalyzer</span>
+              <span class="skill-item">Lauterbach TRACE32</span>
+              <span class="skill-item">EB tresos</span>
+              <span class="skill-item">DaVinci Configurator</span>
+              <span class="skill-item">Git</span>
+              <span class="skill-item">JIRA</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>MCU / Hardware</h3>
+            <div class="skill-items">
+              <span class="skill-item">Infineon AURIX</span>
+              <span class="skill-item">Renesas RH850</span>
+              <span class="skill-item">NXP S32K</span>
+              <span class="skill-item">TI C2000</span>
+              <span class="skill-item">STM32</span>
+              <span class="skill-item">ARM Cortex-M/R</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Process & Standards</h3>
+            <div class="skill-items">
+              <span class="skill-item">ASPICE</span>
+              <span class="skill-item">ISO 26262</span>
+              <span class="skill-item">MISRA C</span>
+              <span class="skill-item">V-Model</span>
+              <span class="skill-item">Agile/Scrum</span>
+              <span class="skill-item">CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Experience</h2>
-<p><strong>Job Title – Company</strong> (Year–Year)</p>
-<ul>
-  <li>Achievement or responsibility</li>
-  <li>Achievement or responsibility</li>
-</ul>
+    <!-- Experience Section -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Software Engineer</h4>
+              <span class="timeline-company">Smart Microwave Sensors GmbH</span>
+              <span class="timeline-date">Present</span>
+              <p>Developing embedded software for automotive radar sensors. Working on signal processing firmware, AUTOSAR integration, and safety-critical software components for ADAS applications.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Specialist – Embedded Software</h4>
+              <span class="timeline-company">ZF Friedrichshafen AG</span>
+              <span class="timeline-date">Previous</span>
+              <p>Worked on powertrain embedded systems for hybrid/electric vehicles. Responsibilities included AUTOSAR BSW configuration, motor control software, and functional safety analysis per ISO 26262.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4>Embedded Programmer</h4>
+              <span class="timeline-company">Invent Solutions</span>
+              <span class="timeline-date">Previous</span>
+              <p>Developed firmware for industrial embedded systems. Implemented communication drivers (CAN, SPI, UART), peripheral control, and real-time task scheduling on ARM-based microcontrollers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Education</h2>
-<p>Degree – University (Year)</p>
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid">
+          <div class="education-card">
+            <h4>Bachelor of Technology – Electronics & Communication Engineering</h4>
+            <p>Focused on embedded systems, digital electronics, signal processing, and communication protocols. Graduated with strong project work in power electronics and microcontroller-based systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h2>Projects</h2>
-<ul>
-  <li><strong>Project Name:</strong> Short description</li>
-</ul>
+    <!-- Contact Section -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-intro">I'm always interested in hearing about new opportunities in automotive embedded systems. Whether you have a project, a role, or just want to connect — feel free to reach out!</p>
+        <div class="contact-grid">
+          <a href="https://linkedin.com/in/manmohan-kinthali" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></span>
+            <h4>LinkedIn</h4>
+            <p>Connect with me</p>
+          </a>
+          <a href="https://github.com/manmohankinthali" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></span>
+            <h4>GitHub</h4>
+            <p>View my projects</p>
+          </a>
+          <a href="mailto:manmohankinthali@gmail.com" class="contact-card">
+            <span class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+            <h4>Email</h4>
+            <p>manmohankinthali@gmail.com</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>Designed & Built by Manmohan Kinthali &copy; 2026 | All Rights Reserved</p>
+        <p class="footer-tagline">Passionate about Automotive Embedded Systems & Innovation</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile navigation toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+      navToggle.classList.toggle('active');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
