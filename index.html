@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
 <title>Manmohan Kinthali | Embedded Software Engineer</title>
-<style>
-:root{--bg:#020617;--card:#020617;--text:#e5e7eb;--muted:#94a3b8;--accent:#38bdf8}
-*{box-sizing:border-box;font-family:system-ui}
-body{margin:0;background:#020617;color:var(--text)}
-a{color:var(--accent);text-decoration:none}
-.container{max-width:1000px;margin:auto;padding:2rem}
-nav{display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:2rem}
-.card{background:#020617;border-radius:1rem;padding:1.5rem;box-shadow:0 10px 30px rgba(0,0,0,.4)}
-h1{font-size:2.4rem}
-p{color:var(--muted)}
-.lang{margin-left:auto}
-@media print{nav,.lang{display:none}body{background:#fff;color:#000}}
-</style>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Manmohan Kinthali","jobTitle":"Embedded Software Engineer","email":"mailto:manmohankinthali@gmail.com","sameAs":["https://linkedin.com/in/manmohan-kinthali","https://github.com/manmohankinthali"],"knowsAbout":["Embedded C","AUTOSAR","CAN","Power Electronics","FuSa","ASPICE"]}
+</script>
 </head>
 <body>
 <div class="container">
@@ -25,25 +13,16 @@ p{color:var(--muted)}
 <a href="work.html">Work</a>
 <a href="projects.html">Projects</a>
 <a href="education.html">Education</a>
-<select class="lang" onchange="setLang(this.value)">
-<option value="en">EN</option>
-<option value="de">DE</option>
-</select>
+<a href="print.html" class="no-print">Download PDF</a>
+<button class="toggle" onclick="toggleTheme()">🌗</button>
 </nav>
-<div class="card" data-en>
+<div class="card">
 <h1>Manmohan Kinthali</h1>
-<p><strong>Embedded Software Engineer</strong></p>
-<p>5+ years of experience in automotive embedded systems and power electronics.</p>
-<p>Braunschweig, Germany · <a href="mailto:manmohankinthali@gmail.com">Email</a> · <a href="https://github.com/manmohankinthali">GitHub</a></p>
-</div>
-<div class="card" data-de style="display:none">
-<h1>Manmohan Kinthali</h1>
-<p><strong>Embedded-Softwareentwickler</strong></p>
-<p>Über 5 Jahre Erfahrung in Automotive Embedded Systems und Leistungselektronik.</p>
+<p>Embedded Software Engineer – Automotive & Power Electronics</p>
+<p>Braunschweig, Germany</p>
 </div>
 </div>
 <script>
-function setLang(l){document.querySelectorAll('[data-en]').forEach(e=>e.style.display=l==='en'?'block':'none');document.querySelectorAll('[data-de]').forEach(e=>e.style.display=l==='de'?'block':'none')}
+function toggleTheme(){document.body.classList.toggle('light')}
 </script>
-</body>
-</html>
+</body></html>
