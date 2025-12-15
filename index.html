@@ -2,55 +2,211 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Name - Resume</title>
+  <title>Manmohan Kinthali | Embedded Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --mono: "Courier New", monospace;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
+      margin: 0;
+      background: linear-gradient(180deg, #020617, #020617);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
       line-height: 1.6;
-      padding: 20px;
     }
-    h1, h2 {
-      color: #2c3e50;
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
     }
-    hr {
-      margin: 20px 0;
+
+    header {
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin: 0;
+      letter-spacing: -1px;
+    }
+
+    .title {
+      color: var(--accent);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .contact {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      margin: 0 0 10px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+
+    .skill-card {
+      background: var(--card);
+      border: 1px solid #1e293b;
+      padding: 12px;
+      border-radius: 8px;
+      font-family: var(--mono);
+      font-size: 0.9rem;
+    }
+
+    .job {
+      margin-bottom: 24px;
+    }
+
+    .job-title {
+      font-weight: 600;
+    }
+
+    .job-meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 60px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
 
-<h1>Your Name</h1>
-<p><strong>Job Title</strong></p>
-<p>Email: youremail@example.com | LinkedIn | GitHub</p>
+<div class="container">
 
-<hr>
+<header>
+  <h1>Manmohan Kinthali</h1>
+  <div class="title">Embedded Software Engineer</div>
+  <div class="contact">
+    📍 Location · ✉️ manmohankinthali@gmail.com · 
+    <a href="https://github.com/manmohankinthali">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/manmohan-kinthali/">LinkedIn</a>
+  </div>
+</header>
 
-<h2>Summary</h2>
-<p>Short professional summary about your skills and goals.</p>
+<section>
+  <h2>Professional Summary</h2>
+  <p>
+    Embedded Software Engineer at Smart Micro | Ex-ZF | ISO-26262 Certified.
+  </p>
+</section>
 
-<h2>Skills</h2>
-<ul>
-  <li>Skill 1</li>
-  <li>Skill 2</li>
-  <li>Skill 3</li>
-</ul>
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill-card">Languages: C, C++, Python</div>
+    <div class="skill-card">MCUs: ARM Cortex-M, STM32, ESP32, AVR</div>
+    <div class="skill-card">RTOS: FreeRTOS, Linux</div>
+    <div class="skill-card">Interfaces: UART, SPI, I2C, CAN, USB, Ethernet</div>
+    <div class="skill-card">Debugging: GDB, JTAG, SWD, Logic Analyzer</div>
+    <div class="skill-card">Tools: Git, CMake, GCC, CMake, SVN, etc.</div>
+  </div>
+</section>
 
-<h2>Experience</h2>
-<p><strong>Job Title – Company</strong> (Year–Year)</p>
-<ul>
-  <li>Achievement or responsibility</li>
-  <li>Achievement or responsibility</li>
-</ul>
+<section>
+  <h2>Professional Experience</h2>
 
-<h2>Education</h2>
-<p>Degree – University (Year)</p>
+  <div class="job">
+    <div class="job-title">Embedded Software Engineer — Company Name</div>
+    <div class="job-meta">Month Year – Present</div>
+    <ul>
+      <li>Designed and implemented firmware for ARM Cortex-M microcontrollers in C/C++</li>
+      <li>Developed device drivers for SPI, I2C, UART, and GPIO peripherals</li>
+      <li>Integrated FreeRTOS and implemented multitasking and synchronization</li>
+      <li>Performed board bring-up and low-level debugging using JTAG/SWD</li>
+      <li>Reduced boot time and memory usage through code optimization</li>
+    </ul>
+  </div>
 
-<h2>Projects</h2>
-<ul>
-  <li><strong>Project Name:</strong> Short description</li>
-</ul>
+</section>
 
+<section>
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      <strong>RTOS-Based Sensor Node</strong> – FreeRTOS firmware for STM32 with
+      multi-threaded sensor acquisition and CAN communication
+    </li>
+    <li>
+      <strong>Bootloader Implementation</strong> – Custom UART bootloader with
+      firmware upgrade and CRC validation
+    </li>
+    <li>
+      <strong>IoT Device Firmware</strong> – ESP32 firmware with Wi-Fi, MQTT,
+      OTA updates, and power management
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <p><strong>Degree in Electrical / Computer Engineering</strong><br>
+     University Name — Year
+  </p>
+</section>
+
+<footer>
+  Built with GitHub Pages · Embedded Systems Focused Resume
+</footer>
+
+</div>
 </body>
 </html>
