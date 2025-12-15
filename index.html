@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manmohan Kinthali | Embedded Software Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="Embedded Software Engineer with 5+ years of experience in Automotive and Power Electronics" />
   <style>
     :root {
       --bg: #0f172a;
@@ -12,104 +12,19 @@
       --text: #e5e7eb;
       --muted: #94a3b8;
       --accent: #38bdf8;
-      --mono: "Courier New", monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
 
     body {
-      margin: 0;
       background: linear-gradient(180deg, #020617, #020617);
       color: var(--text);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
       line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    header {
-      border-bottom: 1px solid #1e293b;
-      padding-bottom: 24px;
-      margin-bottom: 32px;
-    }
-
-    h1 {
-      font-size: 2.6rem;
-      margin: 0;
-      letter-spacing: -1px;
-    }
-
-    .title {
-      color: var(--accent);
-      font-weight: 600;
-      margin-top: 4px;
-    }
-
-    .contact {
-      margin-top: 12px;
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    section {
-      margin-bottom: 36px;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      border-left: 4px solid var(--accent);
-      padding-left: 12px;
-      margin-bottom: 16px;
-    }
-
-    p {
-      margin: 0 0 10px 0;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 12px;
-    }
-
-    .skill-card {
-      background: var(--card);
-      border: 1px solid #1e293b;
-      padding: 12px;
-      border-radius: 8px;
-      font-family: var(--mono);
-      font-size: 0.9rem;
-    }
-
-    .job {
-      margin-bottom: 24px;
-    }
-
-    .job-title {
-      font-weight: 600;
-    }
-
-    .job-meta {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin-bottom: 6px;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.85rem;
-      margin-top: 60px;
     }
 
     a {
@@ -117,96 +32,247 @@
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1.5rem 4rem;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
+    header {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 70ch;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    ul {
+      margin-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(56,189,248,0.15);
+      color: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      margin: 0.25rem 0.25rem 0 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 4rem;
     }
   </style>
 </head>
 <body>
+  <main class="container">
+    <header>
+      <h1>Manmohan Kinthali</h1>
+      <p><strong>Embedded Software Engineer</strong> — 5+ years of experience in Automotive Embedded Systems and Power Electronics</p>
+      <div class="contact">
+        <span>Braunschweig, Germany</span>
+        <span>📧 <a href="mailto:manmohankinthali@gmail.com">manmohankinthali@gmail.com</a></span>
+        <span>📞 +49 155 1042 3008</span>
+        <span>🔗 <a href="https://www.linkedin.com/in/manmohan-kinthali/">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/manmohankinthali">GitHub</a></span>
+      </div>
+    </header>
 
-<div class="container">
+    <section>
+      <h2>Work Experience</h2>
 
-<header>
-  <h1>Manmohan Kinthali</h1>
-  <div class="title">Embedded Software Engineer</div>
-  <div class="contact">
-    📍 Location · ✉️ manmohankinthali@gmail.com · 
-    <a href="https://github.com/manmohankinthali">GitHub</a> ·
-    <a href="https://www.linkedin.com/in/manmohan-kinthali/">LinkedIn</a>
-  </div>
-</header>
+      <div class="card">
+        <h3>Software Engineer — Smart Microwave Sensors GmbH</h3>
+        <p>Oct 2022 – Present | Braunschweig, Germany</p>
+        <ul>
+          <li>Providing bare-metal BSW support for feature project teams</li>
+          <li>Configuration of device drivers, COM and MEM stacks</li>
+          <li>Implementation of COM synchronization mechanisms</li>
+        </ul>
+      </div>
 
-<section>
-  <h2>Professional Summary</h2>
-  <p>
-    Embedded Software Engineer at Smart Micro | Ex-ZF | ISO-26262 Certified.
-  </p>
-</section>
+      <div class="card">
+        <h3>Specialist — ZF Technical Center India Pvt. Ltd.</h3>
+        <p>Aug 2019 – Sep 2022 | Hyderabad, India</p>
+        <ul>
+          <li>Design and development of power electronics systems for HEV and BEV</li>
+          <li>Module owner for multiple software components</li>
+          <li>Developed RAD Master for safe DC-link capacitor discharge</li>
+          <li>Implemented external device configurations</li>
+          <li>Active contributor in FuSa, ASPICE assessments (Level-2 rating)</li>
+          <li>Worked across BSW and application layers</li>
+        </ul>
+      </div>
 
-<section>
-  <h2>Technical Skills</h2>
-  <div class="skills">
-    <div class="skill-card">Languages: C, C++, Python</div>
-    <div class="skill-card">MCUs: ARM Cortex-M, STM32, ESP32, AVR</div>
-    <div class="skill-card">RTOS: FreeRTOS, Linux</div>
-    <div class="skill-card">Interfaces: UART, SPI, I2C, CAN, USB, Ethernet</div>
-    <div class="skill-card">Debugging: GDB, JTAG, SWD, Logic Analyzer</div>
-    <div class="skill-card">Tools: Git, CMake, GCC, CMake, SVN, etc.</div>
-  </div>
-</section>
+      <div class="card">
+        <h3>Embedded Programmer — Invent Solutions Pvt. Ltd.</h3>
+        <p>Jun 2017 – Aug 2019 | Chennai, India</p>
+        <ul>
+          <li>EV and white goods subsystem implementation</li>
+          <li>Motor control strategies for EV applications</li>
+          <li>BLDC motor tuning using FOC and speed profiles</li>
+          <li>CAN Master design for BAS communication</li>
+          <li>Device driver development and Tuya IoT module configuration</li>
+        </ul>
+      </div>
+    </section>
 
-<section>
-  <h2>Professional Experience</h2>
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Multi & Plug-in HEV</h3>
+          <ul>
+            <li>Power electronics feature implementation and rational checks</li>
+            <li>Temperature signal conditioning</li>
+            <li>External ADC configuration for HV measurement</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Battery EV (FEV)</h3>
+          <ul>
+            <li>Design and implementation of power electronics systems</li>
+            <li>Functional owner for Emergency Stop and Temperature signals</li>
+            <li>ASPICE assessment contributor</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>BSG Control Unit</h3>
+          <ul>
+            <li>Torque boost control mechanism</li>
+            <li>Open and closed loop FOC algorithms</li>
+            <li>CAN Master for BAS mode control</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>High Voltage BLDC Fan</h3>
+          <ul>
+            <li>Device drivers and rotor positioning</li>
+            <li>Code optimized to 8 KB Flash and 1 KB RAM</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <div class="job">
-    <div class="job-title">Embedded Software Engineer — Company Name</div>
-    <div class="job-meta">Month Year – Present</div>
-    <ul>
-      <li>Designed and implemented firmware for ARM Cortex-M microcontrollers in C/C++</li>
-      <li>Developed device drivers for SPI, I2C, UART, and GPIO peripherals</li>
-      <li>Integrated FreeRTOS and implemented multitasking and synchronization</li>
-      <li>Performed board bring-up and low-level debugging using JTAG/SWD</li>
-      <li>Reduced boot time and memory usage through code optimization</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <span class="tag">Embedded C</span>
+        <span class="tag">AUTOSAR</span>
+        <span class="tag">MCAL</span>
+        <span class="tag">CAN</span>
+        <span class="tag">SPI</span>
+        <span class="tag">UART</span>
+        <span class="tag">I2C</span>
+        <span class="tag">Power Electronics</span>
+        <span class="tag">TriCore</span>
+        <span class="tag">Trace32</span>
+        <span class="tag">FuSa</span>
+        <span class="tag">ASPICE</span>
+        <span class="tag">Git</span>
+        <span class="tag">V-Model</span>
+        <span class="tag">SAFE Agile</span>
+      </div>
+    </section>
 
-</section>
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Bachelor of Technology — Electronics & Communication Engineering</h3>
+        <p>GMR Institute of Technology, JNTUK (2013 – 2017)</p>
+        <ul>
+          <li>Autonomous robot using GPS and obstacle avoidance</li>
+          <li>Hybrid fiber optic sensor system for structural health monitoring</li>
+        </ul>
+      </div>
+    </section>
 
-<section>
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>RTOS-Based Sensor Node</strong> – FreeRTOS firmware for STM32 with
-      multi-threaded sensor acquisition and CAN communication
-    </li>
-    <li>
-      <strong>Bootloader Implementation</strong> – Custom UART bootloader with
-      firmware upgrade and CRC validation
-    </li>
-    <li>
-      <strong>IoT Device Firmware</strong> – ESP32 firmware with Wi-Fi, MQTT,
-      OTA updates, and power management
-    </li>
-  </ul>
-</section>
+    <section>
+      <h2>Languages</h2>
+      <div class="card">
+        <ul>
+          <li>English — Full Professional</li>
+          <li>German — Limited Working</li>
+          <li>Telugu — Native</li>
+          <li>Hindi — Professional Working</li>
+        </ul>
+      </div>
+    </section>
 
-<section>
-  <h2>Education</h2>
-  <p><strong>Degree in Electrical / Computer Engineering</strong><br>
-     University Name — Year
-  </p>
-</section>
+    <section>
+      <h2>Achievements</h2>
+      <div class="card">
+        <ul>
+          <li>R&R and SPOT Awards for defect-free delivery (2021)</li>
+          <li>University #1 paper on Fiber Optic Sensors for structural health monitoring</li>
+        </ul>
+      </div>
+    </section>
 
-<footer>
-  Built with GitHub Pages · Embedded Systems Focused Resume
-</footer>
+    <footer>
+      © <span id="year"></span> Manmohan Kinthali
+    </footer>
+  </main>
 
-</div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
