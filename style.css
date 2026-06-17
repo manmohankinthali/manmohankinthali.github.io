@@ -633,9 +633,9 @@ a:hover {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -676,6 +676,49 @@ a:hover {
 .contact-card p {
   font-size: 0.8rem;
   color: var(--text-secondary);
+}
+
+.achievement-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-item,
+.language-card {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  transition: all var(--transition);
+}
+
+.achievement-item:hover,
+.language-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px rgba(56, 189, 248, 0.08);
+}
+
+.achievement-item h4,
+.language-card h4 {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.achievement-item p,
+.language-card p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.language-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 /* ===== Footer ===== */
